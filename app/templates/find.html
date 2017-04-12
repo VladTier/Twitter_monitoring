@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Enter word</h1>
+<br>
+<form class="add-word" role="form" method="post" action="">
+  {{ form.csrf_token }}
+  <p>
+    {{ form.words(placeholder="words") }}
+    <span class="error">
+      {% if form.words.errors %}
+        {% for error in form.words.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </span>
+  </p>
+  <button class="btn btn-sm btn-success" type="submit">Find tweets</button>
+</form>
+
+{% endblock %}
+

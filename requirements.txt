@@ -1,0 +1,11 @@
+click==6.6
+Flask==0.12
+Flask-SQLAlchemy==2.1
+Jinja2==2.8.1
+SQLAlchemy==1.1.4
+mysql-python
+WTForms
+Flask-Migrate
+Flask-WTF==0.14.2
+flask_wtf
+Flask-Login
